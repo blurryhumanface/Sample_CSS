@@ -55,7 +55,7 @@ body {
   font-family: helvetica, arial, sans;
 }
 h1 {
-  font-size: 7vw;
+  font-size: 4em;
   margin-top: 0;
 }
 a {
@@ -155,13 +155,46 @@ h2 ~ p {
 /* HERO STYLES */
 .full-hero {
   background-color: #c7dbfc;
-  height: 50vh;
+  background-size: cover;
+  box-sizing: border-box;
+  height: 100vh;
+  padding-top: 10vh;
+}
+.hero-home {
+  background-image: url(/images/shark.jpg);
+  background-position: center top;
+}
+.hero-content {
+  color: #fff;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  top: 50%;
+  transform: translate(0, -50%);
+}
+.hero-content h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 7vw;
+  margin-bottom: 0.25em;
+}
+.hero-content .social-link {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #557c83;
+}
+.hero-content .social-link:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 /* SOCIAL STYLES */
 .social-list {
   list-style: none;
-  padding: 0;
+  padding: 0px;
+  text-align: center;
+}
+.social-list-footer {
+  list-style: none;
+  padding-top: 10px;
   text-align: center;
 }
 .social-link {
@@ -182,6 +215,10 @@ h2 ~ p {
   width: 2.5em;
 }
 .social-list > li {
+  display: inline-block;
+  margin: 0 0.5em;
+}
+.social-list-footer > li {
   display: inline-block;
   margin: 0 0.5em;
 }
